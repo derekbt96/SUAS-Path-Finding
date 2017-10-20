@@ -22,7 +22,7 @@ function varargout = MissionPlanningGui(varargin)
 
 % Edit the above text to modify the response to help MissionPlanningGui
 
-% Last Modified by GUIDE v2.5 14-Oct-2017 16:06:22
+% Last Modified by GUIDE v2.5 19-Oct-2017 18:40:50
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -51,6 +51,8 @@ function MissionPlanningGui_OpeningFcn(hObject, eventdata, handles, varargin)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 % varargin   command line arguments to MissionPlanningGui (see VARARGIN)
+
+run('Test.m')
 
 % Choose default command line output for MissionPlanningGui
 handles.output = hObject;
@@ -138,9 +140,9 @@ function pushbutton1_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 
-% --- Executes on button press in pushbutton2.
-function pushbutton2_Callback(hObject, eventdata, handles)
-% hObject    handle to pushbutton2 (see GCBO)
+% --- Executes on button press in pushTest.
+function pushTest_Callback(hObject, eventdata, handles)
+% hObject    handle to pushTest (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
@@ -229,3 +231,17 @@ function pushbutton5_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton5 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes on button press in tableButton.
+function tableButton_Callback(hObject, eventdata, handles)
+% hObject    handle to tableButton (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+run('Test.m')
+
+handles.output = hObject;
+
+% Update handles structure
+guidata(hObject, handles);
